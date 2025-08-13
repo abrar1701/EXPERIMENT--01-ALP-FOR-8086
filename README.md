@@ -78,14 +78,39 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
+```nasm
+org 100h  
 
+mov ax, 4535h
+mov bx, 733fh
+add ax, bx
+
+ret
+```
+<img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/614e9f19-ad40-4a70-91c9-4f9691ffa008" />
 
 
 ## Output  
+<img width="464" height="361" alt="image" src="https://github.com/user-attachments/assets/a2614cd8-6ebc-4d13-9558-54fb5bab7c84" />
+<img width="708" height="545" alt="image" src="https://github.com/user-attachments/assets/f52d715b-4fe0-46d4-8248-96a88a0f4f86" />
+
  
 ## Subtraction   of 8 bit numbers  ALP 
- 
+ ```nasm
+org 100h  
+
+mov ax, 4535h
+mov bx, 733fh
+sub ax, bx
+
+ret
+```
+<img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/70969dab-dcd4-48fe-aa95-3daf17acae31" />
+
 ## Output  
+<img width="456" height="352" alt="image" src="https://github.com/user-attachments/assets/e621ab78-93b8-49ae-b781-15336b963eb9" />
+<img width="708" height="545" alt="image" src="https://github.com/user-attachments/assets/1a84d181-80ce-4c69-b120-dd148c58659f" />
+
 ## Multiplication alp 
  ## Output  
 
