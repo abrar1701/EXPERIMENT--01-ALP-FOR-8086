@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name : MOHAMED ABRAR M
+Roll no : 212223040111
+Date of experiment : 19-8-2025
 
 
 
