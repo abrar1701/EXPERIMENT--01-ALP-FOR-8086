@@ -75,50 +75,63 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 
-## Programs for arithmetic  operations
-
-## Addition  of 8 bit ALP 
+## Programs for arithmetic  operations:
 ```nasm
-org 100h  
+org 100h   
 
 mov ax, 4535h
 mov bx, 733fh
 add ax, bx
+mov [1000h], ax
 
-ret
-```
-<img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/614e9f19-ad40-4a70-91c9-4f9691ffa008" />
-
-
-## Output  
-<img width="464" height="361" alt="image" src="https://github.com/user-attachments/assets/a2614cd8-6ebc-4d13-9558-54fb5bab7c84" />
-<img width="708" height="545" alt="image" src="https://github.com/user-attachments/assets/f52d715b-4fe0-46d4-8248-96a88a0f4f86" />
-
- 
-## Subtraction   of 8 bit numbers  ALP 
- ```nasm
-org 100h  
-
-mov ax, 4535h
-mov bx, 733fh
 sub ax, bx
+mov [1002h], ax
+
+mov ax, 4h 
+mov bx, 2h
+mul bx
+mov [1004h], ax
+    
+    
+mov ax, 6h
+mov bx, 2h
+div bx
+mov [1006h], ax   
+    
+ret
+```
+<img width="905" height="747" alt="image" src="https://github.com/user-attachments/assets/f6a0e675-7df2-42fa-9a25-7e9ba156b268" />
+
+## Output for arithmetic operations:
+<img width="1632" height="591" alt="image" src="https://github.com/user-attachments/assets/d372ed09-d06f-4f28-ba26-897f45af9a77" />
+
+## Programs for logical operations:
+```nasm
+org 100h
+   
+mov ax, 2345h
+mov bx, 1111h
+and ax, bx
+mov [2000h], ax     
+            
+mov ax, 2345h
+or ax, bx
+mov [2002h], ax     
+
+mov ax, 2345h
+xor ax, bx
+mov [2004h], ax     
+
+mov ax, 2345h
+not ax
+mov [2006h], ax     
 
 ret
 ```
-<img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/70969dab-dcd4-48fe-aa95-3daf17acae31" />
+<img width="905" height="747" alt="image" src="https://github.com/user-attachments/assets/7be3b9b9-fffa-467a-9264-5985d9aff4da" />
 
-## Output  
-<img width="456" height="352" alt="image" src="https://github.com/user-attachments/assets/e621ab78-93b8-49ae-b781-15336b963eb9" />
-<img width="708" height="545" alt="image" src="https://github.com/user-attachments/assets/1a84d181-80ce-4c69-b120-dd148c58659f" />
-
-## Multiplication alp 
- ## Output  
-
-
-## Division alp 
-
-## Output  
-
+## Output for logical operations:
+<img width="1632" height="596" alt="image" src="https://github.com/user-attachments/assets/b4485e7f-0c5e-4910-97e1-84e271b20b66" />
 
 ## Result :
  
